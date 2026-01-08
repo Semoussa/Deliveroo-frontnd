@@ -1,11 +1,8 @@
 export default function Meals(props) {
-  // console.log(props);
-  // const tab = props.meals.length;
-  // console.log(tab);
   return (
     <div className="meals">
       {props.meals.map((elem) => {
-        console.log(elem.picture);
+        // console.log(elem.picture);
 
         return (
           <div key={elem.id} className="item">
