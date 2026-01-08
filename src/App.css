@@ -139,6 +139,7 @@ header div {
   flex-shrink: 0;
   /* border: 1px solid green; */
   width: calc(50% - 7.5px);
+  height: 150px;
   display: flex;
   justify-content: space-between;
   gap: 10px;

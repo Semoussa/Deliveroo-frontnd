@@ -5,6 +5,8 @@ export default function Meals(props) {
   return (
     <div className="meals">
       {props.meals.map((elem) => {
+        console.log(elem.picture);
+
         return (
           <div key={elem.id} className="item">
             <div className="item-desc">
@@ -15,9 +17,11 @@ export default function Meals(props) {
                 {elem.popular ? <p>Populaire</p> : ""}
               </div>
             </div>
-            <div className="item-picture">
-              <img src={elem.picture} alt="" />
-            </div>
+            {elem.picture && (
+              <div className="item-picture">
+                <img src={elem.picture} alt="" />
+              </div>
+            )}
           </div>
         );
       })}
