@@ -1,0 +1,194 @@
+* {
+  box-sizing: border-box;
+}
+
+/* div,
+p {
+  outline: 1px solid grey;
+}
+p {
+  outline: 1px solid lightblue;
+}
+section {
+  outline: 1px solid black;
+} */
+h1 {
+  font-size: 2rem;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+h2 {
+  font-size: 1.5rem;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+h3 {
+  font-size: 1.2rem;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-weight: 400;
+  margin-bottom: 10px;
+}
+
+p {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  color: rgb(129, 128, 128);
+}
+
+.container {
+  max-width: 1200px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+header {
+  height: 60px;
+  border-bottom: 1px solid rgb(221, 219, 219);
+}
+
+header div {
+  height: 100%;
+}
+
+.logo {
+  width: 180px;
+  padding: 5px;
+}
+
+.logo img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  /* border: 1px solid red; */
+}
+
+.first-section {
+  /* background-color: aliceblue; */
+  margin: 30px 0px;
+}
+
+.first-section .container {
+  display: flex;
+  height: 200px;
+  gap: 30px;
+}
+
+.left-part {
+  flex: 1;
+  /* border: 2px solid red; */
+  padding: 10px;
+  height: 100%;
+}
+
+.first-section .left-part p {
+  font-size: 19px;
+  line-height: 28px;
+}
+
+.right-part {
+  width: 350px;
+  height: 100%;
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+.right-part img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.second-section {
+  background-color: #e6e5e5;
+  /* border: 2px solid green; */
+  padding-top: 30px;
+  height: 100%;
+}
+
+.second-section .container {
+  display: flex;
+  gap: 30px;
+  /* border: 3px solid blue; */
+  /* margin-top: 30px; */
+}
+
+.second-section .left-part {
+  flex: 1;
+  /* border: 1px solid red; */
+}
+.second-section .right-part {
+  width: 350px;
+  border: 1px rgb(0, 0, 0) solid;
+  height: 190px;
+}
+
+.meals {
+  /* border: 1px solid blue; */
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  /* padding: 10px; */
+}
+
+.meals .item {
+  flex-shrink: 0;
+  /* border: 1px solid green; */
+  width: calc(50% - 7.5px);
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+  padding: 10px;
+  border-radius: 5px;
+  background-color: rgb(250, 250, 250);
+}
+
+.item-desc {
+  /* border: 1px solid black; */
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.item-picture {
+  width: 130px;
+  height: 130px;
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+.item-picture img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* ------- Application du style à toute les occurences sauf la première ---------- */
+.category + .category {
+  /* border: 1px solid yellow; */
+  margin-top: 30px;
+}
+
+.item-desc .description {
+  /* color: blue; */
+  line-height: 18px;
+  height: 36px;
+  overflow: hidden;
+  margin-bottom: 10px;
+}
+
+.price {
+  display: flex;
+  gap: 20px;
+}
+
+.price p:nth-child(2) {
+  color: rgb(234, 152, 0);
+  font-weight: 700;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
